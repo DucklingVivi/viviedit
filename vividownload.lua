@@ -12,9 +12,9 @@ local todownload = {
 
 for _, value in pairs(todownload) do
     local url = url_base .. value
-    local request = http.get(str, nil, true)
+    local request = http.get(url, nil, true)
     local file = fs.open(directory .. value, "wb")
-    file.write(file.readAll())
+    file.write(request.readAll())
     file.close()
 end
 
