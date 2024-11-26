@@ -22,6 +22,8 @@ local function get_contents(url)
                 local file = fs.open(v.path, "w")
                 file.write(file_contents)
                 file.close()
+            elseif v.type == "dir" then
+                get_contents(v.url)
             end
         end
     end
