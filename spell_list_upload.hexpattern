@@ -1,0 +1,9 @@
+{
+    @str(__P:WISPS:CORE:MAIN_SPELLS)
+}>>
+{
+    @str(__P:WISPS:CORE:WISP_EATER)
+    @str(__P:WISPS:CORE:STAFF_MAKER)
+    @str(__P:WISPS:CORE:CC_PROCESS)
+}
+Schrödinger's Gambit

@@ -1,0 +1,26 @@
+
+#def(setup_registry)( --$setup_registry(int)
+    Nullary Reflection
+    Numerical Reflection(<1>)
+    Huginn's Gambit
+    Muninn's Reflection
+    Gemini Gambit
+    Muninn's Reflection
+    Flock's Gambit
+    Huginn's Gambit
+)
+
+#def(read_registry)(
+    Muninn's Reflection
+    Numerical Reflection(<1>)
+    Selection Distillation
+)
+
+#def(write_registry)( -- $write_registry(int)
+    Muninn's Reflection
+    Jester's Gambit
+    Numerical Reflection(<1>)
+    Jester's Gambit
+    Surgeon's Exaltation
+    Huginn's Gambit
+)

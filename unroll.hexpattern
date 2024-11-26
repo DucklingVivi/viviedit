@@ -1,0 +1,36 @@
+#def(unroll)(
+    Muninn's Reflection
+    Rotation Gambit II
+    Huginn's Gambit
+    Muninn's Reflection
+    Gemini Gambit
+    Vacant Reflection
+    {
+        Combination Distillation
+    }
+    Flock's Disintegration
+    Muninn's Reflection
+    Gemini Gambit
+    Muninn's Reflection
+    Flock's Gambit
+    Hermes' Gambit
+    Jester's Gambit
+    Huginn's Gambit
+    Hermes' Gambit
+)
+
+#def(unroll_list)(
+    Gemini Decomposition
+    Abacus Purification
+    {
+        <1>
+    }
+    Jester's Gambit
+    $unroll
+)
+
+
+
+
+
+

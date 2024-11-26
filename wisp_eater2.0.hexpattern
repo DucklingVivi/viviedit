@@ -1,0 +1,180 @@
+
+#file(unroll)
+#file(wisp_core_utils)
+
+
+
+
+#def(save_data)(
+    --Bookkeeper's Gambit(v)
+    $write_registry(1)
+)
+
+#def(load_data)(
+    $read_registry(1)
+   -- Nullary Reflection
+)
+
+#def(get_self)(
+    Identity Reflection
+)
+
+#def(get_wisps)(
+    {
+        @entity_type(hexal:wisp/wandering)
+    }>>
+    $get_self
+    Compass' Purification
+    Numerical Reflection(12)
+    Zone Exaltation: Type
+)
+
+
+
+
+#def(main)(
+
+    $load_data
+    Gemini Decomposition
+    Nullary Reflection
+    Inequality Distillation
+    Jester's Gambit
+    Vacant Reflection
+    Augur's Exaltation
+    Numerical Reflection(0)
+    Prospector's Gambit
+    Abacus Purification
+    {
+       --[W,N...], N
+       Dioscuri Gambit
+       Selection Distillation
+       Nullary Reflection
+       Inequality Distillation
+       {--[W,N], N
+           Aergia's Gambit --Not Equal
+           [ --Equal
+               Undertaker's Gambit
+               Excisor's Distillation
+               Prospector's Gambit
+               Excisor's Distillation
+               Jester's Gambit
+               Numerical Reflection(-2)
+               Additive Distillation
+           ]
+       }
+       Flock's Disintegration
+       Augur's Exaltation
+       Hermes' Gambit
+       
+       --[W,N...], N
+       Numerical Reflection(2)
+       Additive Distillation
+       --[W,N...], N
+    }
+    Jester's Gambit
+    $unroll
+    Bookkeeper's Gambit(v)
+    $get_wisps
+    --[W,N...],[nW]
+    Gemini Decomposition
+    Abacus Purification
+    {
+        --[]. []
+        Speaker's Decomposition
+        --[], [], W
+        Numerical Reflection(2)
+        Fisherman's Gambit II
+        Prospector's Gambit
+        --[], [], W, [], W
+        Locator's Distillation
+        Gemini Decomposition
+        --[W,N], [nW], W, N, N
+        Numerical Reflection(0)
+        Minimus Distillation 
+        {--[W,N], [nW], W, N
+            [               -- not in list
+                Bookkeeper's Gambit(v)
+                --[W,N], [nW], W
+                Rotation Gambit
+                --[nW], W, [W,N]
+                Gemini Decomposition
+                Abacus Purification
+                --[nW], W, [W,N], N
+                Rotation Gambit II
+                --[nW], N, W, [W,N]
+                Jester's Gambit
+                --[nW], N, [W,N], W
+                Integration Distillation
+                Numerical Reflection(0)
+                Integration Distillation
+                --[nW], N, [W,N]
+                Rotation Gambit II
+                --[W,N], [nW], N
+                
+            ]
+            Bookkeeper's Gambit(v-) -- in list
+        }
+        Flock's Disintegration
+        Augur's Exaltation
+        Hermes' Gambit
+        --[W,N], [nW], N
+        Rotation Gambit
+        --[nW], N, [W,N]
+        Gemini Decomposition
+        Numerical Reflection(2)
+        Fisherman's Gambit II
+        --[nW], N, [W,N], [W,N], N
+        Numerical Reflection(1)
+        Additive Distillation
+        --[nW], N, [W,N], [W,N], N
+        Selection Distillation
+        --[nW], N, [W,N], N
+        Numerical Reflection(1)
+        Additive Distillation
+        Undertaker's Gambit
+        --[nW], N, N, [W,N], N
+        Numerical Reflection(3)
+        Fisherman's Gambit II
+        Numerical Reflection(1)
+        Additive Distillation
+        Jester's Gambit
+        Surgeon's Exaltation
+        --[nW], N, N, [W,N]
+        Jester's Gambit
+        {
+            @num(295)
+        }>>
+        Maximus Distillation
+        --[nW], N, [W,N], B
+        Rotation Gambit II
+        Jester's Gambit
+        Rotation Gambit
+        --[nW], [W,N], N, B 
+        {
+            [
+                Prospector's Gambit
+                Jester's Gambit
+                Selection Distillation
+                Consume Wisp
+                
+            ] --Consume
+            Bookkeeper's Gambit(v)--Dont
+        }
+        Flock's Disintegration
+        Augur's Exaltation
+        Hermes' Gambit
+        Jester's Gambit
+        --[W,N], [nW]
+    }
+    Jester's Gambit
+    $unroll
+    
+    --[W,N], [nW]
+    Bookkeeper's Gambit(v)
+    $save_data
+)
+
+
+$main
+
+ 

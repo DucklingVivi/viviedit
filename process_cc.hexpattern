@@ -1,0 +1,73 @@
+
+
+
+#def(get_focal_port)( 
+    {
+        @entity_type(ducky-periphs:focal_port_wrapper_entity)
+        @str(__P:WISPS:CORE:CC_FOCAL_PORT)
+    }>>
+    Observation Purification
+    Entity Distillation: Type
+)
+
+#def(get_iota)(
+    $get_focal_port
+    Chronicler's Purification
+)
+
+#def(get_reset_iota)(
+    $get_focal_port
+    Gemini Decomposition
+    Chronicler's Purification
+    Jester's Gambit
+    Nullary Reflection
+    Chronicler's Gambit
+)
+
+#def(wisp)(
+    $get_reset_iota
+    {
+        @str(__P:PROPERTY_INSERTER)
+    }>>
+    Observation Purification
+    Hermes' Gambit
+    Scribe's Gambit
+    Identity Reflection
+    Consume Wisp
+)
+
+#def(main)(
+    $get_iota
+    --[?]/null
+    Augur's Purification
+    Timekeeper's Reflection
+    Numerical Reflection(3)
+    Modulus Distillation
+    Numerical Reflection(0)
+    Equality Distillation
+    Conjunction Distillation
+    {
+        [
+            {
+                $wisp
+            }
+            {
+                @str(__P:WISPS:CORE:CC_FOCAL_PORT)
+            }>>
+            Observation Purification
+            Numerical Reflection(1)
+            Summon Cyclic Wisp
+        ]
+        Aergia's Gambit
+    }>>
+    Augur's Exaltation
+    Hermes' Gambit
+)
+
+{
+    @str(__P:WISPS:CORE:CC_PROCESS)
+}>>
+{
+    $main
+}
+Schrödinger's Gambit

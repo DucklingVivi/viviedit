@@ -58,7 +58,9 @@ local tMenuItems = {}
 if not bReadOnly then
     table.insert(tMenuItems, "Save")
 end
-table.insert(tMenuItems, "Etch")
+if peripheral.find("focal_port") then
+    table.insert(tMenuItems, "Etch")
+end
 if peripheral.find("printer") then
     table.insert(tMenuItems, "Print")
 end
