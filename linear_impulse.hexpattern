@@ -1,0 +1,59 @@
+#def(linear_impulse)(
+    // save previous ravenmind
+    Muninn's Reflection
+    Rotation Gambit II
+
+    // on the first iteration, normalize the impulse vector and get its length
+    // or just push 0 if it's the zero vector to avoid dividing by zero
+    Gemini Decomposition
+    Vector Reflection Zero
+    Inequality Distillation
+    {
+        Gemini Decomposition
+        Length Purification
+        Undertaker's Gambit
+        Division Distillation
+        Jester's Gambit
+    }
+    {
+        Numerical Reflection(0)
+    }
+    Augur's Exaltation
+    
+    // recursive function to actually do the impulse
+    {
+        // is the remaining speed greater than 1?
+        Gemini Decomposition
+        Numerical Reflection(1)
+        Maximus Distillation
+        
+        // if so, impulse by the unit vector (length 1) and decrement the speed
+        // then do the recursive function again
+        {
+            Rotation Gambit II
+            Dioscuri Gambit
+            Impulse
+            Rotation Gambit
+            Numerical Reflection(1)
+            Subtractive Distillation
+        }
+        Muninn's Reflection
+        Combination Distillation
+        
+        // otherwise, impulse by the remaining speed and don't recurse
+        {
+            Multiplicative Distillation
+            Impulse
+        }
+
+        Augur's Exaltation
+        Hermes' Gambit
+    }
+    Gemini Decomposition
+    Huginn's Gambit
+    Combination Distillation
+    Hermes' Gambit
+
+    // restore previous ravenmind
+    Huginn's Gambit
+)
