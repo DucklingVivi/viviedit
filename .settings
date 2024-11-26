@@ -1,0 +1,6 @@
+{
+  [ "motd.path" ] = "/rom/motd.txt:/motd.txt:/rom/cccbridge_motd.txt",
+  [ "viviedit.autocomplete" ] = true,
+  [ "viviedit.default_extension" ] = "hexpattern"
+    
+}
