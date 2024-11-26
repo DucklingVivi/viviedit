@@ -2,8 +2,6 @@
 
 local vivicontext = require("vivicontext")
 
-local default_folder = "hexpatterns/"
-
 
 local tArgs = { ... }
 if #tArgs == 0 then
@@ -24,7 +22,7 @@ end
 if not fs.exists(sPath) and not string.find(sPath, "%.") then
     local sExtension = settings.get("viviedit.default_extension")
     if sExtension ~= "" and type(sExtension) == "string" then
-        sPath = default_folder .. sPath .. "." .. sExtension
+        sPath = sPath .. "." .. sExtension
     end
 end
 
