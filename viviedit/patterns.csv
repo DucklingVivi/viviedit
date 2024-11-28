@@ -659,3 +659,10 @@ HexStuff,Editor's Distillation,SOUTH_WEST,awaqeeeeedq,false,hexstuff,idk,idk,idk
 HexCircus,Linear Particle,NORTH_EAST,eqqqqaw,false,hexcircus,idk,idk,idk,idk 
 Unknown,Particle Burst,EAST,deeeewaaddwqqqqa,false,unknown,idk,idk,idk,idk 
 Unknown,Echoing Reflection,EAST,wwaqa,false,unknown,idk,idk,idk,idk
+HexCassettes,Enqueue,EAST,qeqwqwqwqwqeqaweqqqqqwweeweweewqdwwewewwewweweww,false,hexcassettes,idk,idk,idk,idk
+HexCassettes,Dequeue,WEST,eqeweweweweqedwqeeeeewwqqwqwqqweawwqwqwwqwwqwqww,false,hexcassettes,idk,idk,idk,idk
+HexCassettes,Disqueue,WEST,eqeweweweweqedwqeeeeewwqqwqwqqw,false,hexcassettes,idk,idk,idk,idk
+HexCassettes,Threading Reflection,EAST,qeqwqwqwqwqeqaweqqqqq,false,hexcassettes,idk,idk,idk,idk
+HexCassettes,Threading Reflection II,EAST,qeqwqwqwqwqeqaweqqqqqwweeweweew,false,hexcassettes,idk,idk,idk,idk
+HexCassettes,Program Purification,WEST,eqeweweweweqedwqeeeee,false,hexcassettes,idk,idk,idk,idk
+HexCassettes,Program Purification II,WEST,eqeweweweweqedwqeeeeedww,false,hexcassettes,idk,idk,idk,idk
