@@ -192,7 +192,7 @@ vivicontext.patterntoiota = function(pattern)
         return nil
     end
     if(pattern.direction == "GREAT") then
-        return "_G"+pattern.translation;
+        return "_G" .. pattern.translation;
     end
     local val = {
         startDir = pattern.direction,
