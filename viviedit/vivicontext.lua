@@ -188,6 +188,9 @@ vivicontext.patterns = loadDefaultPatterns()
 
 
 vivicontext.patterntoiota = function(pattern)
+    if(pattern == nil) then
+        return nil
+    end
     local val = {
         startDir = pattern.direction,
         angles = pattern.pattern

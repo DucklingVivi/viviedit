@@ -516,10 +516,7 @@ function etch(event, ...)
     elseif event == "focus" then
         local result = tArgs[1]
         
-        local val = {
-            "focus",
-            result
-        }
+        local val = result;
 
         etch("send_value", val)
     elseif event == "genie" then
@@ -566,14 +563,16 @@ function etch(event, ...)
         etch(tEvent, result, table.unpack(tArgs, 3))
     elseif event == "send_value" then
         local result = tArgs[1]
-        local modem = ""
-        peripheral.find("modem", function(name, _) 
-            modem = name;
-        end)
-        rednet.open(modem)
-        local id = rednet.lookup("iota", "coreWisp")
-        rednet.send(id , result, "iota")
-        rednet.close(modem)
+        local peripheral = peripheral.wrap("bottom")
+        peripheral.writeIota(result)
+        -- local modem = ""
+        -- peripheral.find("modem", function(name, _) 
+        --     modem = name;
+        -- end)
+        -- rednet.open(modem)
+        -- local id = rednet.lookup("iota", "coreWisp")
+        -- rednet.send(id , result, "iota")
+        -- rednet.close(modem)
         etch("close")
         etch("send_value_message")
     elseif event == "save_temp" then
@@ -598,7 +597,7 @@ function etch(event, ...)
             },
             ["text"] = {
                 { 
-                    "Value sent to coreWisp."
+                    "Value sent to focal port."
                 }
             },
             ["button"] = {
@@ -620,9 +619,9 @@ function etch(event, ...)
             },
             ["button"] = {
                 { ['x']=16, ['y']=1, ["label"]="Abort", ["status"]=false, ["func"]=function() etch("close") end },
-                { ['x']=7, ['y']=4, ["label"]="Focus   ", ["status"]=false, ["func"]=function() etch("save_temp", "focus") end },
-                { ['x']=7, ['y']=6, ["label"]="Genie   ", ["status"]=false, ["func"]=function() etch("save_temp", "genie") end },
-                { ['x']=7, ['y']=8, ["label"]="Property", ["status"]=false, ["func"]=function() etch("property_prompt") end }
+                { ['x']=7, ['y']=4, ["label"]="Focus   ", ["status"]=false, ["func"]=function() etch("save_temp", "focus") end }
+                --{ ['x']=7, ['y']=6, ["label"]="Genie   ", ["status"]=false, ["func"]=function() etch("save_temp", "genie") end },
+                --{ ['x']=7, ['y']=8, ["label"]="Property", ["status"]=false, ["func"]=function() etch("property_prompt") end }
                 
             }
         })
