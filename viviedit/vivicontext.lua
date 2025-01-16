@@ -256,7 +256,7 @@ local function evaluate_definition(accum, ctx)
         local newacc = ctx:new():switch_type("scan_accumulator")
         newacc:open_file(path)
         newacc.depth = ctx.depth + 1
-        if(accum.args) then
+        if(accum.args ~= nil) then
             for k, val in pairs(accum.args) do
                 newacc.toreplace[k] = val
             end
@@ -454,6 +454,13 @@ accumulator:new("iotas_accumulator"):setExecute(function(self,ctx)
         ctx.accum:setValue("buffer","")
         ctx:read_next()
         return
+    else
+        local iota = vivicontext.iotas[self.value]
+        if(iota) then
+            table.insert(ctx.value,iota:build(nil))
+        end
+        ctx:switch_type("scan_accumulator")
+        return 
     end
     ctx:read_next()
 end):finalize()
@@ -634,7 +641,7 @@ local function parser()
 
     function o:read_next()
         buffer = ""
-        if(self.overridebuffer[0]) then
+        if(self.overridebuffer[0] ~= nil) then
             self.char = self.overridebuffer[0]:sub(1,1)
             self.overridebuffer[0] = self.overridebuffer[0]:sub(2)
             if(self.overridebuffer[0] == "") then
