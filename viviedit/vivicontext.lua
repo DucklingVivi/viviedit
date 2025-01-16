@@ -122,8 +122,9 @@ addIota("garbage", function(self,val)
 end)
 
 addIota("bool", function(self,val)
-    if(val == "true" or val == "false") then
-        return val == "true"
+
+    if(val[1] == "true" or val[1] == "false") then
+        return val[1] == "true"
     else
         return {garbage = true}
     end
@@ -276,7 +277,7 @@ accumulator:new("definition_arg_accumulator"):setExecute(function(self, ctx)
         evaluate_definition(self,ctx)
         return
     elseif(ctx.char:match("%(")) then
-        local newacc = ctx:new():switch_type("definition_scan_accumulator")
+        local newacc = ctx:new(true):switch_type("definition_scan_accumulator")
         newacc.accum:setValue("depth", 0)
         newacc.accum:setValue("buffer", "")
         newacc.raw = false
@@ -396,7 +397,7 @@ accumulator:new("list_accumulator"):setExecute(function(self,ctx)
         ctx.processing = false
         return 
     end
-    local newacc = ctx:new():switch_type("scan_accumulator")
+    local newacc = ctx:new(true):switch_type("scan_accumulator")
     newacc:set_file(ctx.file)
     newacc:read_next()
     newacc:execute()
@@ -672,7 +673,7 @@ local function parser()
         self.error = error
     end
 
-    function o:new()
+    function o:new(override)
         local runner = {
             file = nil,
             value = {},
@@ -691,7 +692,7 @@ local function parser()
                 runner.toreplace[k] = v
             end
         end
-        if(self.overridebuffer) then
+        if(self.overridebuffer and override) then
             runner.overridebuffer = self.overridebuffer
         end
         if(self.depth) then
