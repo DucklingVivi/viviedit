@@ -124,7 +124,7 @@ local tPatterns = {
     { "^[%d][xA-Fa-f.%d#]+", colorMatch["number"] },
     { "^[%d]+", colorMatch["number"] },
     { "^[,{}%[%]%(%)]", colorMatch["bracket"] },
-    { "^%$[%w\'_.]+[%w]?", colorMatch["keyword"] },
+    { "^%$[%w\'_.]+[%w]?", colorMatch["operator"] },
     { "^%#[%w%s\'_.]+", colorMatch["func"] },
     { "^[!%/\\:~<>=%*%+%-%%]+", colorMatch["text"] },
     { "^true", colorMatch["number"] },
@@ -137,7 +137,7 @@ local tPatterns = {
         return colorMatch["text"]
     end },
     { "^%w[%w:%s%+%-\']+%w", function(match,after, _, nLine)
-        if(vivicontext.patterns[match]) then
+        if(vivicontext.patterns[match] or vivicontext.argpatterns[match]) then
             return colorMatch["keyword"]
         end
         return colorMatch["text"]
@@ -180,6 +180,9 @@ local blitInvert = {['0']=1,['1']=2,['2']=4,['3']=8,['4']=16,['5']=32,['7']=128,
 for k, v in pairs(vivicontext.patterns) do
     virtualEnviroment[k] = true
 end
+for k, v in pairs(vivicontext.argpatterns) do
+    virtualEnviroment[k] = true
+end
 
 --[[ +++ Other functions +++ ]]
 local function autocomplete()
@@ -192,7 +195,11 @@ local function autocomplete()
         local comple = {}
         local completeVal = tContent[tCursor.y]:sub(nStartPos, tCursor.x-1)
         for k, v in pairs(vivicontext.patterns) do
-
+            if string.sub(k, 1, #completeVal) == completeVal then
+                table.insert(comple, k:sub(#completeVal + 1, #k))
+            end
+        end
+        for k, v in pairs(vivicontext.argpatterns) do
             if string.sub(k, 1, #completeVal) == completeVal then
                 table.insert(comple, k:sub(#completeVal + 1, #k))
             end
