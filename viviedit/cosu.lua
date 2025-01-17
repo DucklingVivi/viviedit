@@ -136,7 +136,7 @@ local tPatterns = {
         end
         return colorMatch["text"]
     end },
-    { "^%w[%w:%s%+%-\']+%w", function(match,after, _, nLine)
+    { "^%w[ö%w:%s%+%-\']+%w", function(match,after, _, nLine)
         if(vivicontext.patterns[match] or vivicontext.argpatterns[match]) then
             return colorMatch["keyword"]
         end
