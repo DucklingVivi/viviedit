@@ -177,6 +177,9 @@ local function loadDefaultPatterns()
             for n, label in pairs(labels) do
                 pattern[label] = vals[n]
             end
+            if patterns[pattern["translation"]] ~= nil then
+                pattern["translation"] = pattern["translation"] .. "2"
+            end
             patterns[pattern["translation"]] = pattern
         end
         file.close()
@@ -372,7 +375,7 @@ accumulator:new("pattern_accumulator"):setExecute(function(self, ctx)
     elseif(ctx.char:match("%\n")) then
         finish()
         return
-    elseif(ctx.char:match("[%w:%+%-%s%\']+")) then
+    elseif(ctx.char:match("[ö%w:%+%-%s%\']+")) then
         self.value = self.value .. ctx.char
         ctx:read_next()
         return
