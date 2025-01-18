@@ -1,0 +1,382 @@
+#file(quine.hexpattern)
+
+
+#def(angle_offsets)(
+    {
+        @num(-1.047)
+        @num(-0.698)
+        @num(-0.349)
+        @num(0)
+        @num(0.349)
+        @num(0.698)
+        @num(1.047)
+    }
+)
+
+#def(radial_offset)(
+    Numerical Reflection(4)
+)
+
+#def(not_null)(
+    {
+        <1>
+        Nullary Reflection
+    }
+    Heket's Gambit
+    Bookkeeper's Gambit(v)
+)
+
+#def(call)(
+    $get_item(2)
+    Observation Purification
+    Numerical Reflection(<1>)
+    Selection Distillation
+    Hermes' Gambit
+)
+
+#def(copy)(
+    Numerical Reflection(<1>)
+    Fisherman's Gambit II
+)
+
+
+#def(get_item)(
+    Muninn's Reflection
+    Numerical Reflection(<1>)
+    Selection Distillation
+)
+#def(set_item)(
+    Muninn's Reflection
+    Numerical Reflection(<1>)
+    Rotation Gambit
+    Surgeon's Exaltation
+    Huginn's Gambit
+)
+
+#def(funcs)(
+    {
+        @str(funcProp)
+        [
+            [--Format List
+                {
+                    [
+                        Classifier's Purification2
+                        Scrivener's Purification
+                        {
+                            @str(:)
+                        }>>
+                        Separation Distillation
+                        Numerical Reflection(1)
+                        Selection Distillation
+                    ]
+                    @iota_type(hexcasting:pattern)
+                    [
+                        Tutu's Gambit
+                    ]
+                }
+                {
+                    @pattern(SOUTH_WEST, qaqddqe)
+                    Dioscuri Gambit
+                    @pattern(SOUTH_WEST, awd)
+                    Locator's Distillation
+                    Numerical Reflection(1)
+                    Additive Distillation
+                    Rotation Gambit
+                    Jester's Gambit
+                    Selection Distillation
+                    Hermes' Gambit
+                }
+                $get_item(1) --List
+                --Gemini Decomposition
+                --index index
+                --Numerical Reflection(3)
+                --Subtractive Distillation
+                --index index
+                --Gemini Decomposition
+                --index index index
+                --Numerical Reflection(0)
+                --Undertaker's Gambit
+                --Maximus Distillation
+                --Rotation Gambit II
+                --Augur's Exaltation
+                --Jester's Gambit
+                --Numerical Reflection(4)
+                --Additive Distillation
+                --Numerical Reflection(2)
+                --Fisherman's Gambit II
+                --Length Purification
+                --Dioscuri Gambit
+                --Minimus Distillation II
+                --Rotation Gambit II
+                --Augur's Exaltation
+                --Selection Exaltation
+                Thoth's Gambit
+                Jester's Gambit
+                Bookkeeper's Gambit(v)
+            ]
+            [--str to vec
+                {
+                    @pattern(SOUTH_WEST, qaqddq)
+                    Input Purification
+                }
+                Jester's Gambit
+                Comma Reflection
+                Separation Distillation
+                Thoth's Gambit
+                Flock's Disintegration
+                Vector Exaltation
+            ]--update specks
+            [
+                $call(0)
+                $get_item(3)
+                Numerical Reflection(3)
+                Subtractive Distillation
+                {
+                    Rotation Gambit II
+                    Soroban Reflection
+                    Additive Distillation
+                    Selection Distillation
+                    Alter Speck
+                }
+                $get_item(4)
+                Soroban Gambit
+                Thoth's Gambit
+                Bookkeeper's Gambit(v)
+                $get_item(5)
+                $not_null(
+                    $get_item(1)
+                    $get_item(3)
+                    Selection Distillation
+                    Single's Purification
+                    Alter Speck
+                )
+            ]
+            [--create specks
+                Vector Disintegration
+                Bookkeeper's Gambit(-v-)
+                Jester's Gambit
+                Inverse Tangent Purification II
+                --vec, initial_angle
+                {
+                    Additive Distillation
+                    --vec, angle
+                    Gemini Decomposition
+                    Cosine Purification
+                    Jester's Gambit
+                    --vec, cos, angle
+                    Sine Purification
+                    Numerical Reflection(0)
+                    Jester's Gambit
+                    Vector Exaltation
+                    --vec, vec
+                    Gemini Decomposition
+                    $radial_offset
+                    Multiplicative Distillation
+                    --vec, angle, pos
+                    Rotation Gambit
+                    Additive Distillation
+                    --angle, pos
+                    Jester's Gambit
+                    Numerical Reflection(-1)
+                    Multiplicative Distillation
+                    Nullary Reflection
+                    Rotation Gambit II    
+                    Conjure Speck
+                    
+                    @pattern(SOUTH_WEST, qaqddq)
+                }
+                $angle_offsets
+                Thoth's Gambit
+                $set_item(4)
+                Gemini Decomposition
+                Cosine Purification
+                Jester's Gambit
+                Sine Purification
+                Numerical Reflection(0)
+                Jester's Gambit
+                Vector Exaltation
+                Gemini Decomposition
+                $radial_offset
+                Multiplicative Distillation
+                Rotation Gambit
+                Additive Distillation
+                Vector Reflection +Y
+                Additive Distillation
+                Jester's Gambit
+                Numerical Reflection(-1)
+                Multiplicative Distillation
+                Nullary Reflection
+                Rotation Gambit II
+                Conjure Speck
+                $set_item(5) 
+            ]
+            [--set index
+                --num
+                Numerical Reflection(0)
+                Dioscuri Gambit
+                Maximus Distillation
+                Rotation Gambit II
+                Augur's Exaltation
+                $get_item(1)
+                Length Purification
+                Dioscuri Gambit
+                Minimus Distillation
+                Rotation Gambit II
+                Augur's Exaltation
+                $set_item(3)
+            ]
+        ]
+    }>>
+    Schrödinger's Gambit
+)
+
+#def(main)(
+$self_modifying_quine(
+    {
+        @str(Figura_Edit)
+    }>>
+)(
+    {   --timer, iota, updatedisp, idx, speck
+        [@num(0) [] @str(funcProp) @num(0) [] @null]
+    }>>
+)(
+    Whisper Reflection
+    {
+        @str(editor )
+    }>>
+    Separation Distillation
+    Numerical Reflection(1)
+    Selection Distillation
+    --str
+    Gemini Decomposition
+    --str, str
+    Augur's Purification
+    --str, bool
+    $get_item(0)
+    Numerical Reflection(0)
+    Equality Distillation
+    Conjunction Distillation
+    {
+        Spacing Reflection
+        Separation Distillation
+        Speaker's Decomposition
+        {
+            [
+                Bookkeeper's Gambit(v)
+                @str(mainiota)
+                [    
+                    Bookkeeper's Gambit(v)
+                    Scribe's Reflection
+                    $set_item(1)
+                    $call(2)
+                ]
+                @str(create)
+                [
+                    Speaker's Decomposition
+                    $call(1)
+                    Jester's Gambit
+                    Speaker's Decomposition
+                    $call(1)
+                    Jester's Gambit
+                    Bookkeeper's Gambit(v)
+                    $get_item(4)
+                    {
+                        Speaker's Decomposition
+                        $not_null(
+                            Dismiss Speck
+                        )
+                    }
+                    Heket's Gambit
+                    Bookkeeper's Gambit(v)
+                    $get_item(5)
+                    $not_null(
+                        Dismiss Speck
+                    )
+                    --vec, vec
+                    $call(3)
+                    $call(2)
+                ]
+                @str(index)
+                [
+                    Speaker's Decomposition
+                    {
+                        Bookkeeper's Gambit(v)
+                        @str(next)
+                        [
+                            Bookkeeper's Gambit(v)
+                            $get_item(3)
+                            Numerical Reflection(1)
+                            Additive Distillation
+                            $call(4)
+                        ]
+                        @str(prev)
+                        [
+                            Bookkeeper's Gambit(v)
+                            $get_item(3)
+                            Numerical Reflection(1)
+                            Subtractive Distillation
+                            $call(4)
+                        ]
+                        @str(set)
+                        [
+                            Speaker's Decomposition
+                            Jester's Gambit
+                            Bookkeeper's Gambit(v)
+                            Input Purification
+                            $call(4)
+                        ]
+                    }
+                    Undertaker's Gambit
+                    Jester's Gambit
+                    Locator's Distillation
+                    Numerical Reflection(1)
+                    Additive Distillation
+                    Selection Distillation
+                    Hermes' Gambit
+                    $call(2)
+                ]
+            ]
+        }>>
+        Undertaker's Gambit
+        Jester's Gambit
+        Locator's Distillation
+        Numerical Reflection(1)
+        Additive Distillation
+        Selection Distillation
+        Hermes' Gambit
+        
+        Numerical Reflection(5)
+        $set_item(0)
+        {
+            @str(__SENDCLEAR__)
+        }>>
+        Reveal
+        Bookkeeper's Gambit(v)
+    }
+    {
+        Bookkeeper's Gambit(v)
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+    
+    $get_item(0)
+    Numerical Reflection(1)
+    Subtractive Distillation
+    Gemini Decomposition
+    Numerical Reflection(0)
+    Minimus Distillation
+    Numerical Reflection(0)
+    Rotation Gambit
+    Augur's Exaltation
+    $set_item(0)
+)
+)
+
+
+
+$funcs
+$main
+
+
+
+

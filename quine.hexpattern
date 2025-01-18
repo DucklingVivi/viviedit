@@ -1,0 +1,41 @@
+
+--name, default, contents
+#def(self_modifying_quine)(
+    <1>
+    {
+        <2>
+        Huginn's Gambit
+        <3>
+        Muninn's Reflection
+        {
+            @str(REPLACE_ME_QUINE)
+        }>>
+        Gemini Decomposition
+        Program Purification
+        Rotation Gambit
+        Numerical Reflection(1)
+        Jester's Gambit
+        Surgeon's Exaltation
+        Numerical Reflection(1)
+        Rotation Gambit
+        Enqueue
+    }
+    {
+        @str(REPLACE_ME_QUINE)
+    }>>
+    Prospector's Gambit
+    Jester's Gambit
+    Locator's Distillation
+    --iota, list, location
+    Numerical Reflection(2)
+    Fisherman's Gambit II
+    Surgeon's Exaltation
+    Numerical Reflection(1)
+    Rotation Gambit
+    Enqueue
+)
+
+
+
+
+

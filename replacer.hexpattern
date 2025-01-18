@@ -1,0 +1,103 @@
+
+
+
+
+
+#def(process_list)(
+    Gemini Decomposition
+    --process_list, replaceme, replacer, iota, iota
+    @pattern(SOUTH_WEST, awd)
+    --iotatype
+    {
+        Tutu's Gambit
+        @iota_type(hexcasting:list)
+        [
+            Numerical Reflection(3)
+            Fisherman's Gambit II
+            Jester's Gambit
+            Thoth's Gambit
+        ]
+    }
+    Undertaker's Gambit
+    Jester's Gambit
+    Locator's Distillation
+    Numerical Reflection(1)
+    Additive Distillation
+    Selection Distillation
+    Hermes' Gambit
+    Numerical Reflection(2)
+    Fisherman's Gambit II
+    Prospector's Gambit
+    Equality Distillation
+    {
+        Bookkeeper's Gambit(vv-v)
+    }
+    {
+        Bookkeeper's Gambit(vvv-)
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+)
+
+
+
+--List, replaceme, replacer
+#def(main)(
+Numerical Reflection(3)
+Flock's Gambit
+{
+    $process_list
+}
+Jester's Gambit
+Flock's Disintegration
+--process_list, list, replaceme, replacer
+Rotation Gambit
+Numerical Reflection(3)
+Fisherman's Gambit II
+Jester's Gambit
+Thoth's Gambit
+Bookkeeper's Gambit(vvv-)
+)
+
+
+
+{
+Mind's Reflection
+Compass' Purification
+Mind's Reflection
+Alidade's Purification
+Archer's Distillation
+{
+    @entity_type(ducky-periphs:focal_port_wrapper_entity)
+}>>
+Jester's Gambit
+Entity Distillation: Type
+Gemini Decomposition
+Auditor's Purification
+{
+    [
+        Chronicler's Purification
+    ]
+    [
+        Bookkeeper's Gambit(v)
+        Vacant Reflection
+    ]
+}>>
+Augur's Exaltation
+Hermes' Gambit
+{
+    @str(funcProp)
+    @str(__REPLACE__)
+}>>
+$main
+Hermes' Gambit
+}
+Gemini Decomposition
+{
+    @str(__REPLACE__)
+}>>
+Locator's Distillation
+Schrödinger's Reflection
+Surgeon's Exaltation
+
+
